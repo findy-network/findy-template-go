@@ -14,7 +14,7 @@ jobs:
       - name: use token
         run: git config --global url."https://"${{ secrets.https_prefix }}"github.com/".insteadOf "git@github.com:"
       - name: test
-        run: echo "TODO: implement e2e tests"
+        run: echo "implement e2e tests"
   merge:
     needs: e2e
     runs-on: ubuntu-latest

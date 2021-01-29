@@ -34,8 +34,8 @@ check: check_fmt vet shadow
 dbuild:
 	docker build \
 		--build-arg HTTPS_PREFIX=$(HTTPS_PREFIX) \
-		-t findy-agent-template \
+		-t findy-template-go \
 		.
 
 drun:
-	docker run -it --rm findy-agent-template
+	docker run -it --rm findy-template-go

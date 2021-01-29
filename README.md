@@ -1,11 +1,11 @@
-# findy-agent-template
+# findy-template-go
 
 Template structure for Findy Golang projects
 
 ## Create new project
 
 1. [Open create new repository view](https://github.com/new).
-2. Choose `findy-network/findy-agent-template` as the repository template.
+2. Choose `findy-network/findy-template-go` as the repository template.
 3. Clone the newly created repository to local.
 4. Create `dev` branch for the new repository:
 
@@ -14,7 +14,7 @@ git checkout -b dev
 git push --set-upstream origin dev
 ```
 
-5. Replace ´findy-agent-template´ with your project name in relevant source files.
+5. Replace ´findy-template-go´ with your project name in relevant source files.
 6. Edit this README file and set up the CI tests based on your project.
 
 ## Set up CI

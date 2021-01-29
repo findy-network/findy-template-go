@@ -15,12 +15,12 @@ RUN go mod download
 
 COPY . ./
 
-RUN go build -o /go/bin/findy-agent-template
+RUN go build -o /go/bin/findy-template-go
 
 FROM alpine:3.12
 
-COPY --from=0 /go/bin/findy-agent-template /findy-agent-template
+COPY --from=0 /go/bin/findy-template-go /findy-template-go
 
-RUN echo '/findy-agent-template' > /start.sh && chmod a+x /start.sh
+RUN echo '/findy-template-go' > /start.sh && chmod a+x /start.sh
 
 ENTRYPOINT ["/bin/sh", "-c", "/start.sh"]

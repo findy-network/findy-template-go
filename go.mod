@@ -1,4 +1,4 @@
-module github.com/findy-network/findy-agent-template
+module github.com/findy-network/findy-template-go
 
 go 1.15
 

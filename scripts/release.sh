@@ -21,8 +21,7 @@ if [ -z "$(git status --porcelain)" ]; then
   git pull origin dev
 
   VERSION=v$VERSION_NBR
-  go mod tidy
-  go test ./...
+  go mod tidy -e
 
   set +e
   git commit -a -m "Releasing version $VERSION."

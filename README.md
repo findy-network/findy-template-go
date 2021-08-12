@@ -17,12 +17,7 @@ git push --set-upstream origin dev
 5. Replace ´findy-template-go´ with your project name in relevant source files.
 6. Edit this README file and set up the CI tests based on your project.
 
-## Set up CI
-
-Whenever project has private dependencies, personal github token needs to be provided to the go build system.
-Add a secret for the project that contains this `HTTPS_PREFIX` setting. This can be done in project settings.
-
-`<HTTPS_PREFIX>` is in the form `<github-username>:<github-token>@` e.g. `lauravuo-techlab:xxx@`
+## CI setup
 
 The default CI configuration runs unit tests and linting for each push. Customize the scripts depending on project needs.
 

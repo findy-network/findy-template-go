@@ -1,10 +1,15 @@
-package feature
+package feature_test
 
-import "testing"
+import (
+	"testing"
+
+	"github.com/findy-network/findy-template-go/feature"
+)
 
 func TestFeature(t *testing.T) {
-	err := Feature()
-	if err != nil {
+	t.Parallel()
+
+	if err := feature.Feature(); err != nil {
 		t.Errorf("Feature test failed %s", err)
 	}
 }

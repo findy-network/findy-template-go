@@ -12,5 +12,6 @@ func main() {
 	flag.Parse()
 
 	_ = feature.Feature()
-	glog.Info("Hello Findy")
+
+	glog.Info("Hello dev. Please replace findy-template-go with your own project name.")
 }

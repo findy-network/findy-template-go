@@ -26,8 +26,15 @@ test:
 logged_test:
 	go test -v -p 1 -failfast ./... -args -logtostderr=true -v=10
 
-test_cov:
-	go test -v -p 1 -failfast -coverprofile=c.out ./... && go tool cover -html=c.out
+test_cov_out:
+	go test \
+		-coverpkg=github.com/findy-network/findy-template-go/... \
+		-coverprofile=coverage.txt  \
+		-covermode=atomic \
+		./...
+
+test_cov: test_cov_out
+	go tool cover -html=coverage.txt
 
 check: check_fmt vet shadow
 

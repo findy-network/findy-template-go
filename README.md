@@ -1,6 +1,9 @@
 # findy-template-go
 
-Template structure for Findy Golang projects
+[![test](https://github.com/findy-network/findy-template-go/actions/workflows/test.yml/badge.svg)](https://github.com/findy-network/findy-template-go/actions/workflows/test.yml)
+[![codecov](https://codecov.io/gh/findy-network/findy-template-go/branch/master/graph/badge.svg?token=Q9NQZ1U0LR)](https://codecov.io/gh/findy-network/findy-template-go)
+
+Template structure for Findy Go projects
 
 ## Create new project
 

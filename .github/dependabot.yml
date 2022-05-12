@@ -4,4 +4,4 @@ updates:
     directory: /
     schedule:
       interval: monthly
-    target-branch: "dev"
+#    target-branch: "dev"

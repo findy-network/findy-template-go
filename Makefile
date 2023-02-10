@@ -46,5 +46,5 @@ dbuild:
 drun:
 	docker run -it --rm findy-template-go
 
-scan:
-	@./scripts/scan.sh $(ARGS)
+release:
+	gh workflow run do-release.yml

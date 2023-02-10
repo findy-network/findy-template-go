@@ -1,4 +1,4 @@
-FROM golang:1.18-alpine3.15
+FROM golang:1.20-alpine3.17
 
 WORKDIR /work
 
@@ -9,7 +9,7 @@ COPY . ./
 
 RUN go build -o /go/bin/findy-template-go
 
-FROM alpine:3.15
+FROM alpine:3.17
 
 COPY --from=0 /go/bin/findy-template-go /findy-template-go
 

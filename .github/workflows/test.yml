@@ -4,12 +4,12 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - name: setup
+      - name: setup go
         uses: findy-network/setup-go-action@master
       - name: test and measure coverage
         run: make test_cov_out
       - name: upload coverage
-        uses: codecov/codecov-action@v2
+        uses: codecov/codecov-action@v3
         with:
           files: ./coverage.txt
 
@@ -17,6 +17,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
       - name: docker image
         run: make dbuild

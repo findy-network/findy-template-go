@@ -21,3 +21,6 @@
 
 # Environment variables
 .envrc
+
+.golangci.temp.yml
+.temp

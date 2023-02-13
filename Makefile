@@ -15,7 +15,15 @@ check_fmt:
 	@gofmt -l $(GOFILES)
 
 lint:
-	@golangci-lint run
+	@curl -s https://raw.githubusercontent.com/findy-network/setup-go-action/master/linter/.golangci.yml > .golangci.temp.yml
+	@golangci-lint run --config=.golangci.temp.yml
+
+scan:
+	mkdir -p .temp
+	@curl -s https://raw.githubusercontent.com/findy-network/setup-go-action/master/scanner/scan.sh > .temp/scan.sh && chmod a+x .temp/scan.sh
+	@curl -s https://raw.githubusercontent.com/findy-network/setup-go-action/master/scanner/lichen.sh > .temp/lichen.sh && chmod a+x .temp/lichen.sh
+	@curl -s https://raw.githubusercontent.com/findy-network/setup-go-action/master/scanner/lichen-cfg.yaml > .temp/lichen-cfg.yaml
+	.temp/scan.sh
 
 lint_e:
 	@$(GOPATH)/bin/golint ./... | grep -v export | cat
@@ -46,5 +54,5 @@ dbuild:
 drun:
 	docker run -it --rm findy-template-go
 
-scan:
-	@./scripts/scan.sh $(ARGS)
+release:
+	gh workflow run do-release.yml

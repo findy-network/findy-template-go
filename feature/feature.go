@@ -6,9 +6,9 @@ import (
 )
 
 func Feature() (err error) {
-	defer err2.Return(&err)
+	defer err2.Handle(&err)
 
 	assert.P.True(true != false, "True is false")
 
-	return
+	return err
 }

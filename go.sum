@@ -1,4 +1,6 @@
 github.com/golang/glog v1.1.0 h1:/d3pCKDPWNnvIWe0vVUpNP32qc8U3PDVxySP/y360qE=
 github.com/golang/glog v1.1.0/go.mod h1:pfYeQZ3JWZoXTV5sFc986z3HTpwQs9At6P4ImfuP3NQ=
-github.com/lainio/err2 v0.8.13 h1:Z343j4s/ld+T/1wMKV+jYchtID266TC8f0UIuJhpM3Q=
-github.com/lainio/err2 v0.8.13/go.mod h1:FmcNs9IbLaDMScvPX4iO5dBsbHl8EnS3ybqP31z/RUk=
+github.com/lainio/err2 v0.8.14 h1:B6pN8cBlo2Itwrb/aVS5Mbu/CyFxqNFfxjYsU1bko34=
+github.com/lainio/err2 v0.8.14/go.mod h1:5d/fy7+ytZJEybxIPN/LGEfvnU4y+JWE1tZAWRECJqY=
+golang.org/x/exp v0.0.0-20230105202349-8879d0199aa3 h1:fJwx88sMf5RXwDwziL0/Mn9Wqs+efMSo/RYcL+37W9c=
+golang.org/x/exp v0.0.0-20230105202349-8879d0199aa3/go.mod h1:CxIveKay+FTh1D0yPZemJVgC/95VzuuOLq5Qi4xnoYc=

@@ -1,3 +1,4 @@
+SCAN_SCRIPT_URL="https://raw.githubusercontent.com/findy-network/setup-go-action/master/scanner/cp_scan.sh"
 
 build:
 	go build ./...
@@ -19,10 +20,10 @@ lint:
 	@golangci-lint run --config=.golangci.temp.yml
 
 scan:
-	@curl -s https://raw.githubusercontent.com/findy-network/setup-go-action/master/scanner/cp_scan.sh | bash
+	@curl -s $(SCAN_SCRIPT_URL) | bash
 
 scan_and_report:
-	@curl -s https://raw.githubusercontent.com/findy-network/setup-go-action/master/scanner/cp_scan.sh | bash -s v > licenses.txt
+	@curl -s $(SCAN_SCRIPT_URL) | bash -s v > licenses.txt
 
 lint_e:
 	@$(GOPATH)/bin/golint ./... | grep -v export | cat

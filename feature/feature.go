@@ -8,7 +8,7 @@ import (
 func Feature() (err error) {
 	defer err2.Handle(&err)
 
-	assert.P.True(true != false, "True is false")
+	assert.That(true != false, "True is false")
 
 	return err
 }

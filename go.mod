@@ -1,6 +1,6 @@
 module github.com/findy-network/findy-template-go
 
-go 1.20
+go 1.21
 
 require (
 	github.com/golang/glog v1.1.1

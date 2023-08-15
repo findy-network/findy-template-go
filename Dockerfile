@@ -1,4 +1,4 @@
-FROM golang:1.20-alpine3.17
+FROM golang:1.21-alpine3.18
 
 WORKDIR /work
 
@@ -9,10 +9,10 @@ COPY . ./
 
 RUN go build -o /go/bin/findy-template-go
 
-FROM alpine:3.17
+FROM alpine:3.18
 
 COPY --from=0 /go/bin/findy-template-go /findy-template-go
 
-RUN echo '/findy-template-go' > /start.sh && chmod a+x /start.sh
+RUN echo 'exec /findy-template-go' > /start.sh && chmod a+x /start.sh
 
 ENTRYPOINT ["/bin/sh", "-c", "/start.sh"]

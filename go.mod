@@ -4,7 +4,7 @@ go 1.21
 
 require (
 	github.com/golang/glog v1.1.1
-	github.com/lainio/err2 v0.9.1
+	github.com/lainio/err2 v0.9.40
 )
 
 require golang.org/x/exp v0.0.0-20230105202349-8879d0199aa3 // indirect

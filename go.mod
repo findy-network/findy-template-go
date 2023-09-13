@@ -6,7 +6,7 @@ toolchain go1.21.0
 
 require (
 	github.com/golang/glog v1.1.2
-	github.com/lainio/err2 v0.9.1
+	github.com/lainio/err2 v0.9.41
 )
 
 require golang.org/x/exp v0.0.0-20230105202349-8879d0199aa3 // indirect

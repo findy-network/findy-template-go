@@ -25,7 +25,7 @@ jobs:
 
   govulncheck:
     runs-on: ubuntu-latest
-    name: Run govulncheck
+    name: run govulncheck
     steps:
       - id: govulncheck
         uses: golang/govulncheck-action@v1

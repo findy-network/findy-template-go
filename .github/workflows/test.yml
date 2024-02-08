@@ -9,11 +9,12 @@ jobs:
       - name: test and measure coverage
         run: make test_cov_out
       - name: upload coverage
-        uses: codecov/codecov-action@v3
+        uses: codecov/codecov-action@v4
         with:
           files: ./coverage.txt
           fail_ci_if_error: ${{ github.ref_name != 'dev' }}
           verbose: true
+          token: ${{ secrets.CODECOV_TOKEN }}
 
   image:
     runs-on: ubuntu-latest

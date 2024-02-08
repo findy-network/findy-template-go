@@ -14,6 +14,7 @@ jobs:
           files: ./coverage.txt
           fail_ci_if_error: ${{ github.ref_name != 'dev' }}
           verbose: true
+          token: ${{ secrets.CODECOV_TOKEN }}
 
   image:
     runs-on: ubuntu-latest

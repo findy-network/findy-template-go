@@ -5,7 +5,7 @@ go 1.21
 toolchain go1.21.0
 
 require (
-	github.com/golang/glog v1.2.0
+	github.com/golang/glog v1.2.1
 	github.com/lainio/err2 v1.0.0
 )
 

@@ -3,6 +3,11 @@
 [![test](https://github.com/findy-network/findy-template-go/actions/workflows/test.yml/badge.svg)](https://github.com/findy-network/findy-template-go/actions/workflows/test.yml)
 [![codecov](https://codecov.io/gh/findy-network/findy-template-go/branch/master/graph/badge.svg?token=Q9NQZ1U0LR)](https://codecov.io/gh/findy-network/findy-template-go)
 
+> Findy Agency is an open-source project for a decentralized identity agency.
+> OP Lab developed it from 2019 to 2024. The project is no longer maintained,
+> but the work will continue with new goals and a new mission.
+> Follow [the blog](https://findy-network.github.io/blog/) for updates.
+
 Template structure for Findy Go projects
 
 ## Create new project
